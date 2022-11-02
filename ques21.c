@@ -28,6 +28,7 @@ void main(){
     int units;
     float b;
     printf("Enter number of units used : ");
+    
     scanf("%d",&units);
     printf("Your bill is  %f",bill(units););
 }
