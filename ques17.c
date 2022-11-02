@@ -8,6 +8,7 @@ void roots(int a, int b, int c){
     printf("%f   %f",r1,r2);
 }
 
+
 void main(){
     roots(4,8,4);
 }
