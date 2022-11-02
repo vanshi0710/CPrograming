@@ -3,8 +3,8 @@
 
 void roots(int a, int b, int c){
     int d = pow((float)b,2) -(float)(4*a*c);
-    float r1 = (float)(a+ sqrt(d))/2;
-    float r2 = (float)(a- sqrt(d))/2;
+    float r1 = (float)((-b) + sqrt(d))/(2*a);
+    float r2 = (float)( (-b) - sqrt(d))/(2*a);
     printf("%f   %f",r1,r2);
 }
 
