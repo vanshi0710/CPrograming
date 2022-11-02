@@ -20,5 +20,8 @@ float grossSalary(int basic){
 }
 
 void main(){
-    printf("%.3f",grossSalary(12000));
+    int basic;
+    printf("Enter Basic salary : ");
+    scanf("%d",&basic)
+    printf("%.3f",grossSalary(basic));
 }
