@@ -9,6 +9,7 @@ void roots(int a, int b, int c){
 }
 
 
-void main(){
+int main(){
     roots(4,8,4);
+    return 0;
 }
