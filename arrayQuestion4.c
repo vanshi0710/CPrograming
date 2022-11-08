@@ -2,7 +2,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 
-int findmax(int arr[],int size){
+int findMax(int arr[],int size){
     int max=arr[0];
     
     for(int i = 0;i<size;i++){
@@ -13,7 +13,7 @@ int findmax(int arr[],int size){
     return max;
 }
 
-int findmin(int arr[],int size){
+int findMin(int arr[],int size){
     int min=arr[0];
     for( int i = 0; i<size; i++){
         if(arr[i]<min){
@@ -39,8 +39,8 @@ void main(){
     printf("Input the number of elements to store in the array:\n ");
     scanf("%d",&size);
     n = array(size);
-    min = findmin(n,size);
-    max = findmax(n,size);
+    min = findMin(n,size);
+    max = findMax(n,size);
     printf("Maximum element is : %d\nMinimum element is : %d",max,min);
 
 }
