@@ -4,7 +4,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 
-int findmax(int arr[],int size){
+int findMax(int arr[],int size){
     int max=arr[0];
     for( int i = 0; i<size; i++){
         if(arr[i]>max){
@@ -14,15 +14,15 @@ int findmax(int arr[],int size){
     return max;
 }
 
-int secondlar(int arr[],int size){
-    int seclar = 0;
-    int max = findmax(arr,size);
+int secondMax(int arr[],int size){
+    int secMax = 0;
+    int max = findMax(arr,size);
     for(int i = 0 ; i<size;i++){
-        if(arr[i]>seclar && arr[i]<max){
-            seclar = arr[i];
+        if(arr[i]>secMax && arr[i]<max){
+            secMax = arr[i];
         }
     }
-    return seclar;
+    return secMax;
 }
 
 
@@ -37,13 +37,13 @@ int* array(int n){
 
 void main(){
     int *n;
-    int seclar;
+    int secMax;
     int size;
     printf("Input the number of elements to store in the array:\n ");
     scanf("%d",&size);
     n = array(size);
-    seclar = secondlar(n,size);
+    secMax = secondMax(n,size);
    
-    printf("The Second largest element in the array is %d",seclar);
+    printf("The Second largest element in the array is %d",secMax);
 
 }
