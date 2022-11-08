@@ -3,19 +3,29 @@
 #include<stdio.h>
 #include<stdlib.h>
 
-int dublicate(n){
-    int arr[n];
+int dublicate(int size){
+    int* arr = (int*)(malloc(sizeof(int) * size));
     int count=0;
+    int flag;
     printf("Enter the elements in an array : ");  
-    for(int i=0;i<n;i++){  
+    for(int i=0;i<size;i++){  
         scanf("%d", &arr[i]);  
     }
-    for(int i =0 ; i<n ;i++){
-        for(int j =i+1;j<n;j++){
+    for(int i =0 ; i<size ;i++){
+        flag =0;
+        for(int j =0;j<i;j++){
+            if(arr[i]==arr[j]){
+                flag =1;
+                break;
+            }
+        }
+        if(flag==0){
+           for(int j =i+1;j<size;j++){
             if(arr[i]==arr[j]){
                 count++;
                 break;
             }
+        } 
         }
     }
     return count;
