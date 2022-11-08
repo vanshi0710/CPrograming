@@ -4,7 +4,7 @@
 
 int firstdublicate(n){
     int arr[n];
-    int flag =0;
+    int flag ;
     printf("Enter the elements in an array : ");  
     for(int i=0;i<n;i++){  
         scanf("%d", &arr[i]);  
@@ -27,8 +27,8 @@ void main(){
     int n;
     
     int num;
-  printf("Input the number of elements to store in the array:\n ");
-  scanf("%d",&num);
+    printf("Input the number of elements to store in the array:\n ");
+    scanf("%d",&num);
     n = firstdublicate(num);
     printf("Total number of duplicate elements found in the array is : %d",n);
 
