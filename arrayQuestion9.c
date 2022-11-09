@@ -2,7 +2,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 
-int firstdublicate(n){
+int firstNonDublicate(int n){
     int arr[n];
     int flag ;
     printf("Enter the elements in an array : ");  
@@ -29,7 +29,7 @@ void main(){
     int num;
     printf("Input the number of elements to store in the array:\n ");
     scanf("%d",&num);
-    n = firstdublicate(num);
+    n = firstNonDublicate(num);
     printf("Total number of duplicate elements found in the array is : %d",n);
 
 }
