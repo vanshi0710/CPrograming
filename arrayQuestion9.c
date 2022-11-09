@@ -11,8 +11,8 @@ int firstdublicate(n){
     }
     for(int i =0 ; i<n ;i++){
         flag =0;
-        for(int j = i+1;j<n;j++){
-            if(arr[i]==arr[j]){
+        for(int j = 0;j<n;j++){
+            if(arr[i]==arr[j] && i!=j){
                 flag =1;
                 break;
             }
