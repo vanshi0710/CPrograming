@@ -11,7 +11,7 @@ char* inputString(int n){
 void strCopy(char arr[],char str[]){
     int i=0;
     
-    while(arr[i] != 0){
+    while(arr[i] != '\0'){
         str[i] = arr[i];
         i++;
     }
