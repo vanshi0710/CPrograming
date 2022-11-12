@@ -20,15 +20,12 @@ int* insertelement(int arr[],int n){
             arr1[i] = arr[i];
         }
     }
-    
-    
     while(i<n){
         arr1[i+1]=arr[i];
         i++;
     }
     return arr1;
 }
-
 int* array(int n){
     int *arr = (int*)(malloc(sizeof(int) * n));
     printf("Enter elements of array:\n");
