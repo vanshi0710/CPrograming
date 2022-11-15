@@ -11,6 +11,7 @@ int searchWord(char str[],char word[]){
     int size =len(str);
     int wordsize =len(word);
     int flag;
+    int count=0;
     for(int i = 0;i < size;i++){
         if(str[i]==word[0]){
             flag=0;
@@ -21,15 +22,16 @@ int searchWord(char str[],char word[]){
                 }
             }
             if(flag==0){
-                return i;
+                count++;
             }
         }
         
     }
+    return count;
 }
 void main(){
-    char str[]="this is prog the program to find the program word in a line of string.";
+    char str[]="this is program the program to find the word program in a line of string.";
     char word[] = "program";
-    int loc = searchWord(str,word);
-    printf("Found at Index : %d",loc);
+    int count =searchWord(str,word);
+    printf("Number of occurance: %d ",count);
 }

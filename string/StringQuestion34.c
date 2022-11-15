@@ -7,10 +7,11 @@ int len(char arr[]){
     }
     return i;
 }
-int searchWord(char str[],char word[]){
+void searchWord(char str[],char word[]){
     int size =len(str);
     int wordsize =len(word);
     int flag;
+    int j;
     for(int i = 0;i < size;i++){
         if(str[i]==word[0]){
             flag=0;
@@ -21,7 +22,17 @@ int searchWord(char str[],char word[]){
                 }
             }
             if(flag==0){
-                return i;
+                    
+                while(str[i]!=' '){
+                    j=i;
+                    while(str[j]!=0){
+
+                        str[j]=str[j+1];
+                        j++;
+                    }
+                   
+                }
+                break;
             }
         }
         
@@ -30,6 +41,6 @@ int searchWord(char str[],char word[]){
 void main(){
     char str[]="this is prog the program to find the program word in a line of string.";
     char word[] = "program";
-    int loc = searchWord(str,word);
-    printf("Found at Index : %d",loc);
+    searchWord(str,word);
+    puts(str);
 }
