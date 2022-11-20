@@ -1,7 +1,8 @@
 .container{
     display:flex;
-    margin:1% auto;
+    margin:5% auto;
     width:60%;
+    box-shadow: rgba(110, 100, 100, 0.276)0.1em 0.1em 0.1em 0.1em ,rgba(110, 100, 100, 0.376) 0.3em 0.3em 0.3em 0.3em,rgba(110, 100, 100, 0.476)0.5em 0.5em 0.5em 0.5em,rgba(110, 100, 100, 0.576) 0.7em 0.7em 0.7em 0.7em;
 }
 img{
     width: 90%;
@@ -15,6 +16,7 @@ img{
     padding: 2em;
     color:aliceblue;
     width:40%;
+
 }
 .second{
     background-color: rgba(110, 100, 100, 0.276);
@@ -27,6 +29,7 @@ img{
     font-size: 4em;
     padding: 0.8em;
     margin:0px auto;
+    
 }
 h4,h2{
     text-decoration: underline;
