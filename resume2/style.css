@@ -1,0 +1,52 @@
+.horizontal{
+    background-color:#cdcdcd;
+    position:absolute;
+    z-index: 5;
+    width:66em;
+    margin-top: 5em;;
+    height: 8em;
+    padding:2em;
+    text-align: right;
+}
+.vertical{
+    display: flex;
+    position:absolute;
+    width:70em;
+}
+.first{
+    background-color: #000000;
+    padding: 19em 2em;
+    
+    padding-bottom: 2em;
+    width:25em;
+    color:white;
+    
+}
+.second{
+    padding: 19em 2em;
+    padding-bottom: 2em;
+    background-color: rgb(255, 255, 255);
+    width:45em;
+}
+.container{
+    margin:1em auto;
+
+    width:70em
+}
+img{
+    width: 15em;
+    height: 15em;
+    margin-top: 3em;
+    margin-left:9%;
+    border-radius: 8em;
+    position: absolute;
+    z-index: 7;
+    border : 8px solid #cdcdcd;
+
+}
+.name{
+    font-size:60px;
+}
+h2{
+    text-decoration: underline;
+}
