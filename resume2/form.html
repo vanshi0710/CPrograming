@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student</title>
+    <style>
+        /* body{
+            background-color:rgb(193, 232, 249);
+        } */
+        form{
+            /* background-color: cyan; */
+            background-image: linear-gradient(to right, rgb(255, 0, 174) , rgb(255, 0, 0));
+            
+            position:absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            border: 5px ridge rgb(226, 226, 255);
+            
+        }
+        .heading {
+            color: white;
+            margin-top: 10px;
+            
+            border:7px outset rgb(93, 0, 255);
+            text-align: center;
+            font-size: 40px;
+            padding: 30px 70px;
+            max-width: 50%;
+        }
+
+        
+        #table{
+            border-spacing: 20px;
+            margin: 0px 80px;
+            color: white;
+            font-size: 18px;
+        }
+        div{
+            overflow-x: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <Form action="resume2.html" name="form" onsubmit="return go()" >
+        <center>
+            <div class="heading">Resume Form</div>
+        </center>
+
+
+        <!-- <fieldset id="field"> -->
+            <div ></div>
+            <table id="table">
+                <tr>
+                    <td>
+                        <label for="name">Name: </label>
+                    </td>
+                    <td>
+                        <input type="text" placeholder="Enter Students full Name" size="40" name="name"><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="Fname" >objective </label>
+                    </td>
+                    <td>
+                        <input type="text" placeholder="" size="40" name="objective"><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="sname">School's Name: </label>
+                    </td>
+                    <td>
+                        <input type="text" placeholder="" size="40" name="sName"><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="cname">Colege's Name: </label>
+                    </td>
+                    <td>
+                        <input type="text" placeholder="" size="40" name="cName"><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="PNo">Phone number: </label>
+                    </td>
+                    <td>
+                        <input type="text" placeholder="" size="40" name="phno"><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="Mname">Email: </label>
+                    </td>
+                    <td>
+                        <input type="email" placeholder="" size="40" name="email"><br>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><label for="DOB">Internship</label></td>
+                    <td><input type="txt" name="intern"></td>
+                </tr>
+                
+                
+               
+                
+               
+                <tr><td >
+                    <button id="submit" >Submit</button>&nbsp <input type="reset">
+                </td>
+                </tr>
+            </table>
+            
+
+
+
+
+        <!-- </fieldset> -->
+
+
+
+    </Form>
+    <!-- <script>
+        function go(){
+            var n = document.form.name.value;
+            if(n==""){
+                alert("Enter name");
+                return false;
+            }
+            n = document.form.fname.value;
+            if(n==null ||n==""){
+                alert("Enter father name");
+                return false;
+            }
+            n = document.form.mname.value;
+            if(n==null ||n==""){
+                alert("Enter Mother name");
+                return false;
+            }
+            n = document.form.phno.value;
+            if(n.length<10){
+                alert("Invalid phone Number");
+                return false;
+            }
+            var t =window.confirm("do you want to submit");
+                if(t){
+                    return true;
+            }
+            else{
+                return false;
+            }
+            
+
+        }
+    </script> -->
+</body>
+
+</html>

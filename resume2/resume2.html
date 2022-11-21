@@ -7,16 +7,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+	integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+	crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body style="background-image:url(image/background.jfif)">
-
-    <div class="container">
+   
+    <div class="container" id ="cont" >
         
         
         <div class="vertical">
             <div class="horizontal">
-<h1 class="name">Vanshika chawla</h1>
+<h1 class="name" id="name">Vanshika chawla</h1>
             </div>
             <div class="image">
                 <img src="image/image.jpg" alt="">
@@ -28,7 +32,7 @@
                         Objective :
                         <hr>
                     </h2>
-                    <p>
+                    <p id="obj">
                         To enhance my professional skills, capabilities and knowledge in an organization which
                         recognizes the value of hard work and trusts me with responsibilities and challenges.
                     </p>
@@ -38,11 +42,13 @@
                         Contacts :
                         <hr>
                     </h2>
-                    <p>
-                        Phone No. : 9412331038
+                    <i class="fa-sharp fa-solid fa-phone"></i> Phone No. : 
+                    <p id="phno">
+                        9412331038
                     </p>
-                    <p>
-                        Email : vanshikachawla0710@gmail.com
+                    <i class="fa-solid fa-at"></i> Email :
+                    <p id="email">
+                         vanshikachawla0710@gmail.com
                     </p>
                 </div>
                 <div>
@@ -67,14 +73,14 @@
                         Education
                         <hr>
                     </h2>
-                    <h3>
+                    <h3 id="cName">
                         Shri Ram Group of Colleges
                     </h3>
                     <p>
                        Pursuing(2019-2023)
                        B.Tech Computer Science  
                     </p>
-                    <h3>
+                    <h3 id="sName">
                         J.V. Public School
                     </h3>
                     <p>
@@ -116,6 +122,23 @@
             </div>
         </div>
     </div>
+    <script>
+        function test(){}
+        let params = new URLSearchParams(location.search);
+        let name=params.get("name");
+        let obj=params.get("objective");
+        let sName=params.get("sName");
+        let cName=params.get("cName");
+        let phno=params.get("phno");
+        let email=params.get("email");
+        document.getElementById("name").innerHTML = name;
+        document.getElementById("obj").innerHTML = obj;
+        document.getElementById("sName").innerHTML = sName;
+        document.getElementById("cName").innerHTML = cName;
+        document.getElementById("phno").innerHTML = phno;
+        document.getElementById("email").innerHTML = email;
+        
+    </script>
 
 </body>
 
